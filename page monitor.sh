@@ -8,7 +8,7 @@ limit = 1520   # you have to set the limit which decided weather to alert you or
 
 if [$size -gt $limit ]
   then 
-  echo $size | ssmtp -s "test" sky.srmse@gmail.com
+  echo $size | ssmtp -s "test" yourmail@mail.com
 fi
 
 rm -rf page.html
