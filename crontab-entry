@@ -1,0 +1,1 @@
+*/15 * * * * /bin/bash /path to/script.sh   #for running the job every 15 minutes
