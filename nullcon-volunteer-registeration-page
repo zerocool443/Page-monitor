@@ -1,0 +1,9 @@
+#!/bin/bash
+
+wget "http://nullcon.net/website/goa-2017/volunteer.php"
+
+size=$(ls -l volunteer.php | awk '{print $5}')
+
+echo $size | ssmtp -s "test" skyatwork@gmail.com 
+
+rm -rf volunteer.php
